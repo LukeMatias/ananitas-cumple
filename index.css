@@ -8,40 +8,73 @@ body {
   font-family: 'Spartan',
     sans-serif;
   font-size: 15px;
-  background: url("imgs/ana.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-position-x: center;
+  height: 100%;
 }
 
+.bg-image {
+  background: url("imgs/ana.jpg");
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+header {
+  margin-top: 2em;
+  align-self: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: rgba(122, 124, 231, 0.39);
+  border-radius: 1em;
+  padding: 0.6em;
+}
+
+
 .main {
-  background: rgba(194, 201, 194, 0.39);
-  margin: 0 1em;
+  background: rgba(245, 247, 245, 0.39);
+  margin: 1em 1em;
   max-width: max-content;
   padding: 1em 1em;
   border-radius: 0.5em;
 }
 
-.wrapper {
-  /* border-top: 1px solid red; */
-  margin-top: 0.5em;
+.count {
+  letter-spacing: 0.5em;
+  font-weight: bold;
 }
 
-.soon {
-  /* border: 1px solid blue; */
+.time {
   font-weight: bold;
 }
 
 .date {
-  /* border: 1px solid green; */
-  /* height: 5em; */
-  /* font-size: 20px; */
   margin-top: 1em;
+  text-align: center;
+  font-size: 1.5rem;
   font-weight: bold;
   word-spacing: 0.5em;
+  background: rgba(116, 137, 197, 0.39);
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+
+
+@media (min-width: 600px) {
+
+
+  .main {
+    margin-left: 3em;
+    /* work in progres */
+  }
 }
