@@ -34,6 +34,19 @@ header {
   font-size: 1rem;
 }
 
+.animation {
+animation-name: loop;
+animation-duration: 15s ;
+animation-fill-mode: both;
+animation-iteration-count: infinite ;
+}
+
+@keyframes loop {
+  from { transform: translateX(-700px);}
+  to { transform: translateX(700px);}
+  
+}
+
 
 
 .main {
