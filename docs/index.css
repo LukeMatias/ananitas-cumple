@@ -35,10 +35,20 @@ header {
 }
 
 .animation {
-animation-name: loop;
-animation-duration: 15s ;
-animation-fill-mode: both;
-animation-iteration-count: infinite ;
+-webkit-animation-name: loop;
+        animation-name: loop;
+-webkit-animation-duration: 15s ;
+        animation-duration: 15s ;
+-webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+-webkit-animation-iteration-count: infinite ;
+        animation-iteration-count: infinite ;
+}
+
+@-webkit-keyframes loop {
+  from { transform: translateX(-700px);}
+  to { transform: translateX(700px);}
+  
 }
 
 @keyframes loop {
